@@ -28,6 +28,8 @@ gem 'spring',        group: :development
 
 gem 'rails_12factor', group: :production
 
+gem 'bcrypt', '3.1.7'
+
 group :test do
   gem 'minitest-reporters', '1.0.5'
   gem 'mini_backtrace',     '0.1.3'
