@@ -27,6 +27,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
 gem 'rails_12factor', group: :production
+gem 'unicorn',        '4.8.3'
 
 gem 'bcrypt', '3.1.7'
 
