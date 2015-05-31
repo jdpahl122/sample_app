@@ -1,0 +1,657 @@
+[2015-05-28 20:16:42] INFO  WEBrick 1.3.1
+[2015-05-28 20:16:42] INFO  ruby 2.1.5 (2014-11-13) [x86_64-darwin14.0]
+[2015-05-28 20:16:42] INFO  WEBrick:LOG:  autovacuum launcher shutting down
+LOG:  received smart shutdown request
+FATAL:  terminating connection due to administrator command
+LOG:  shutting down
+LOG:  database system is shut down
+ to shutdown server
+
+
+Started GET "/" for ::1 at 2015-05-28 20:18:53 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (4.1ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 253ms (Views: 243.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-28 20:18:54 -0400
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 89ms (Views: 88.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/account_activations.css?body=1" for ::1 at 2015-05-28 20:18:54 -0400
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-05-28 20:18:54 -0400
+
+
+Started GET "/assets/password_resets.css?body=1" for ::1 at 2015-05-28 20:18:54 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for ::1 at 2015-05-28 20:18:54 -0400
+
+
+Started GET "/assets/static_pages.css?body=1" for ::1 at 2015-05-28 20:18:54 -0400
+
+
+Started GET "/assets/users.css?body=1" for ::1 at 2015-05-28 20:18:54 -0400
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-05-28 20:18:54 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-05-28 20:18:54 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-05-28 20:18:54 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for ::1 at 2015-05-28 20:18:54 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-05-28 20:18:54 -0400
+
+
+Started GET "/assets/account_activations.js?body=1" for ::1 at 2015-05-28 20:18:54 -0400
+
+
+Started GET "/assets/password_resets.js?body=1" for ::1 at 2015-05-28 20:18:54 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for ::1 at 2015-05-28 20:18:54 -0400
+
+
+Started GET "/assets/static_pages.js?body=1" for ::1 at 2015-05-28 20:18:54 -0400
+
+
+Started GET "/assets/users.js?body=1" for ::1 at 2015-05-28 20:18:54 -0400
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-05-28 20:18:54 -0400
+
+
+Started GET "/assets/rails.png" for ::1 at 2015-05-28 20:18:54 -0400
+
+
+Started GET "/login" for ::1 at 2015-05-28 20:18:56 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (314.8ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 408ms (Views: 407.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2015-05-28 20:19:06 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Dv6BVj6kejzAD8ncjTiiQ1KGmkhwDrNFAzdWOFvaQqfyzYF8cm6X9BjlB0ZtWPT1feau/HnHi6fedJBC5xQBiQ==", "session"=>{"email"=>"jdpahl122@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "jdpahl122@gmail.com"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/users/103
+Completed 302 Found in 93ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/users/103" for ::1 at 2015-05-28 20:19:06 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"103"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 103]]
+  Rendered users/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 103]]
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 88ms (Views: 86.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users" for ::1 at 2015-05-28 20:19:09 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 103]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" LIMIT 30 OFFSET 0[0m
+  Rendered users/_user.html.erb (6.0ms)
+  Rendered users/index.html.erb within layouts/application (14.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 128ms (Views: 126.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users" for ::1 at 2015-05-28 20:20:59 -0400
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 103]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" LIMIT 30 OFFSET 0
+  Rendered users/_user.html.erb (4.6ms)
+  Rendered users/index.html.erb within layouts/application (9.8ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 98ms (Views: 95.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/account_activations.css?body=1" for ::1 at 2015-05-28 20:20:59 -0400
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-05-28 20:20:59 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for ::1 at 2015-05-28 20:20:59 -0400
+
+
+Started GET "/assets/static_pages.css?body=1" for ::1 at 2015-05-28 20:20:59 -0400
+
+
+Started GET "/assets/password_resets.css?body=1" for ::1 at 2015-05-28 20:20:59 -0400
+
+
+Started GET "/assets/users.css?body=1" for ::1 at 2015-05-28 20:20:59 -0400
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-05-28 20:20:59 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-05-28 20:20:59 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-05-28 20:20:59 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-05-28 20:20:59 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for ::1 at 2015-05-28 20:20:59 -0400
+
+
+Started GET "/assets/account_activations.js?body=1" for ::1 at 2015-05-28 20:20:59 -0400
+
+
+Started GET "/assets/password_resets.js?body=1" for ::1 at 2015-05-28 20:20:59 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for ::1 at 2015-05-28 20:20:59 -0400
+
+
+Started GET "/assets/static_pages.js?body=1" for ::1 at 2015-05-28 20:20:59 -0400
+
+
+Started GET "/assets/users.js?body=1" for ::1 at 2015-05-28 20:20:59 -0400
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-05-28 20:20:59 -0400
+
+
+Started DELETE "/logout" for ::1 at 2015-05-28 20:21:03 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Fnbp0SfmjItxaPvh9O1l6rCS3Iii1+y4dZbu+fxmeGPqRen7ayxhQ6mCNXsUjTNcn/LoPKse1Fqo1SiDQKg7TQ=="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 103]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-05-28 20:21:03 -0400
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 112ms (Views: 111.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/account_activations.css?body=1" for ::1 at 2015-05-28 20:21:04 -0400
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-05-28 20:21:04 -0400
+
+
+Started GET "/assets/static_pages.css?body=1" for ::1 at 2015-05-28 20:21:04 -0400
+
+
+Started GET "/assets/password_resets.css?body=1" for ::1 at 2015-05-28 20:21:04 -0400
+
+
+Started GET "/assets/users.css?body=1" for ::1 at 2015-05-28 20:21:04 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for ::1 at 2015-05-28 20:21:04 -0400
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-05-28 20:21:04 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-05-28 20:21:04 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-05-28 20:21:04 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for ::1 at 2015-05-28 20:21:04 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-05-28 20:21:04 -0400
+
+
+Started GET "/assets/account_activations.js?body=1" for ::1 at 2015-05-28 20:21:04 -0400
+
+
+Started GET "/assets/password_resets.js?body=1" for ::1 at 2015-05-28 20:21:04 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for ::1 at 2015-05-28 20:21:04 -0400
+
+
+Started GET "/assets/static_pages.js?body=1" for ::1 at 2015-05-28 20:21:04 -0400
+
+
+Started GET "/assets/users.js?body=1" for ::1 at 2015-05-28 20:21:04 -0400
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-05-28 20:21:04 -0400
+
+
+Started GET "/login" for ::1 at 2015-05-28 20:21:05 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 74ms (Views: 73.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2015-05-28 20:21:10 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mxOUq9MhBb+lA9dhZLCkpvIUbOAuhJorEwLRMzkK+kdnIJSBn+vod33pGfuE0PIQ3XRYVCdNosnOQRdJhcS5aQ==", "session"=>{"email"=>"jdpahl122@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "jdpahl122@gmail.com"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/users/103
+Completed 302 Found in 74ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/users/103" for ::1 at 2015-05-28 20:21:10 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"103"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 103]]
+  Rendered users/show.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 103]]
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 107ms (Views: 105.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/account_activations.css?body=1" for ::1 at 2015-05-28 20:21:10 -0400
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-05-28 20:21:10 -0400
+
+
+Started GET "/assets/users.css?body=1" for ::1 at 2015-05-28 20:21:10 -0400
+
+
+Started GET "/assets/static_pages.css?body=1" for ::1 at 2015-05-28 20:21:10 -0400
+
+
+Started GET "/assets/password_resets.css?body=1" for ::1 at 2015-05-28 20:21:10 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for ::1 at 2015-05-28 20:21:10 -0400
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-05-28 20:21:10 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-05-28 20:21:10 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-05-28 20:21:10 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for ::1 at 2015-05-28 20:21:10 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-05-28 20:21:10 -0400
+
+
+Started GET "/assets/account_activations.js?body=1" for ::1 at 2015-05-28 20:21:10 -0400
+
+
+Started GET "/assets/password_resets.js?body=1" for ::1 at 2015-05-28 20:21:10 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for ::1 at 2015-05-28 20:21:10 -0400
+
+
+Started GET "/assets/static_pages.js?body=1" for ::1 at 2015-05-28 20:21:10 -0400
+
+
+Started GET "/assets/users.js?body=1" for ::1 at 2015-05-28 20:21:10 -0400
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-05-28 20:21:10 -0400
+
+
+Started GET "/users" for ::1 at 2015-05-28 20:21:12 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 103]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" LIMIT 30 OFFSET 0[0m
+  Rendered users/_user.html.erb (4.0ms)
+  Rendered users/index.html.erb within layouts/application (8.4ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 86ms (Views: 84.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/30" for ::1 at 2015-05-28 20:21:15 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"30"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 30]]
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 103]]
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 109ms (Views: 107.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/29" for ::1 at 2015-05-28 20:21:18 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"29"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 29]]
+  Rendered users/show.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 103]]
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 85ms (Views: 83.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-05-28 20:22:43 -0400
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 103]]
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 97ms (Views: 96.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/help" for ::1 at 2015-05-28 20:22:45 -0400
+Processing by StaticPagesController#help as HTML
+  Rendered static_pages/help.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 103]]
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 77ms (Views: 76.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/103" for ::1 at 2015-05-28 20:22:46 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"103"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 103]]
+  Rendered users/show.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 103]]
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 94ms (Views: 92.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for ::1 at 2015-05-28 20:23:37 -0400
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 103]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" LIMIT 30 OFFSET 0
+  Rendered users/_user.html.erb (9.9ms)
+  Rendered users/index.html.erb within layouts/application (14.8ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 97ms (Views: 95.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2015-05-28 20:31:32 -0400
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 103]]
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 84ms (Views: 83.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/account_activations.css?body=1" for ::1 at 2015-05-28 20:31:33 -0400
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-05-28 20:31:33 -0400
+
+
+Started GET "/assets/users.css?body=1" for ::1 at 2015-05-28 20:31:33 -0400
+
+
+Started GET "/assets/static_pages.css?body=1" for ::1 at 2015-05-28 20:31:33 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for ::1 at 2015-05-28 20:31:33 -0400
+
+
+Started GET "/assets/password_resets.css?body=1" for ::1 at 2015-05-28 20:31:33 -0400
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-05-28 20:31:33 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-05-28 20:31:33 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-05-28 20:31:33 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for ::1 at 2015-05-28 20:31:33 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-05-28 20:31:33 -0400
+
+
+Started GET "/assets/account_activations.js?body=1" for ::1 at 2015-05-28 20:31:33 -0400
+
+
+Started GET "/assets/password_resets.js?body=1" for ::1 at 2015-05-28 20:31:33 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for ::1 at 2015-05-28 20:31:33 -0400
+
+
+Started GET "/assets/static_pages.js?body=1" for ::1 at 2015-05-28 20:31:33 -0400
+
+
+Started GET "/assets/users.js?body=1" for ::1 at 2015-05-28 20:31:33 -0400
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-05-28 20:31:33 -0400
+
+
+Started GET "/assets/rails.png" for ::1 at 2015-05-28 20:31:33 -0400
+
+
+Started DELETE "/logout" for ::1 at 2015-05-28 20:39:30 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"PRKu/uDOd0LKxjv/MeXEHan4OiUPamXyN76SUbs3eVzBIa7UrASaihIs9WXRhZKrhpgOkQajXRDq/VQrB/k6cg=="}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 103]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-05-28 20:39:30 -0400
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 102ms (Views: 101.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/account_activations.css?body=1" for ::1 at 2015-05-28 20:39:30 -0400
+
+
+Started GET "/assets/password_resets.css?body=1" for ::1 at 2015-05-28 20:39:30 -0400
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-05-28 20:39:30 -0400
+
+
+Started GET "/assets/static_pages.css?body=1" for ::1 at 2015-05-28 20:39:30 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for ::1 at 2015-05-28 20:39:30 -0400
+
+
+Started GET "/assets/users.css?body=1" for ::1 at 2015-05-28 20:39:30 -0400
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-05-28 20:39:30 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-05-28 20:39:30 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-05-28 20:39:30 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for ::1 at 2015-05-28 20:39:30 -0400
+
+
+Started GET "/assets/password_resets.js?body=1" for ::1 at 2015-05-28 20:39:30 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for ::1 at 2015-05-28 20:39:30 -0400
+
+
+Started GET "/assets/account_activations.js?body=1" for ::1 at 2015-05-28 20:39:30 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-05-28 20:39:30 -0400
+
+
+Started GET "/assets/static_pages.js?body=1" for ::1 at 2015-05-28 20:39:30 -0400
+
+
+Started GET "/assets/users.js?body=1" for ::1 at 2015-05-28 20:39:30 -0400
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-05-28 20:39:30 -0400
+
+
+Started GET "/signup" for ::1 at 2015-05-28 20:39:31 -0400
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (2.9ms)
+  Rendered users/new.html.erb within layouts/application (7.2ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 102ms (Views: 100.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2015-05-28 20:39:44 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"m+moLWgxG0FDc62mO0HqV6DmCIivuZi+13V19yvUusVn2qgHJPv2iZuZYzzbIbzhj4Y8PKZwoFwKNrONlxr56w==", "user"=>{"name"=>"frank", "email"=>"bbb@bbb.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('bbb@bbb.com') LIMIT 1
+  [1m[36mSQL (1.6ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at", "activation_digest") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "frank"], ["email", "bbb@bbb.com"], ["password_digest", "$2a$10$Y0A8S0g4JfHPoeDM6s7xfeQvqb8I.qk4KhnhfAdrOCKQnGRG2h2aO"], ["created_at", "2015-05-29 00:39:44.740172"], ["updated_at", "2015-05-29 00:39:44.740172"], ["activation_digest", "$2a$10$LrwnAHau694ApOEolpwwauNJdxAV2cYokx3wETygm2ix2zeuovGz6"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  Rendered user_mailer/account_activation.html.erb (1.6ms)
+  Rendered user_mailer/account_activation.text.erb (0.4ms)
+
+UserMailer#account_activation: processed outbound mail in 155.2ms
+
+Sent mail to bbb@bbb.com (8.9ms)
+Date: Thu, 28 May 2015 20:39:45 -0400
+From: noreply@example.com
+To: bbb@bbb.com
+Message-ID: <5567b551efd0_2d643fd0760bd46c74989@dhcp035-168-037.wireless.buffalo.edu.mail>
+Subject: Account activation
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5567b551d78b_2d643fd0760bd46c74899";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5567b551d78b_2d643fd0760bd46c74899
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hi frank,
+
+Welcome to the Sample App! Click on the link below to activate your account:
+
+http://localhost:3000/account_activations/jhqjLFe8adYXz1H7-TYXeg/edit?email=bbb%40bbb.com
+
+----==_mimepart_5567b551d78b_2d643fd0760bd46c74899
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<h1>Sample App</h1>
+
+<p>Hi frank,</p>
+
+<p>
+Welcome to the Sample App! Click on the link below to activate your account:
+</p>
+
+<a href="http://localhost:3000/account_activations/jhqjLFe8adYXz1H7-TYXeg/edit?email=bbb%40bbb.com">Activate</a>
+
+----==_mimepart_5567b551d78b_2d643fd0760bd46c74899--
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 412ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/" for ::1 at 2015-05-28 20:39:45 -0400
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 90ms (Views: 89.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/account_activations.css?body=1" for ::1 at 2015-05-28 20:39:45 -0400
+
+
+Started GET "/assets/password_resets.css?body=1" for ::1 at 2015-05-28 20:39:45 -0400
+
+
+Started GET "/assets/static_pages.css?body=1" for ::1 at 2015-05-28 20:39:45 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for ::1 at 2015-05-28 20:39:45 -0400
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-05-28 20:39:45 -0400
+
+
+Started GET "/assets/users.css?body=1" for ::1 at 2015-05-28 20:39:45 -0400
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-05-28 20:39:45 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-05-28 20:39:45 -0400
